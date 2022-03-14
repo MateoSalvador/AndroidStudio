@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ppq</string>
+    <string name="btnConsultarName">Consultar</string>
+    <string name="btnParkingName">P</string>
+    <string name="btnNuevaConsulta">Nueva Consulta</string>
+    <string name="textlblMessage">Hoy día es </string>
+    <string name="placaPrueba">PRR-0329</string>
+</resources>
