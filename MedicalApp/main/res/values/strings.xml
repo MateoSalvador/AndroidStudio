@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MedicalApp</string>
+    <string name="titulo">MEDICAL APP</string>
+    <string name="Nombres">Mateo S, Danilo C, Juan N, Rommel A </string>
+    <string-array name="Tipos_Medicamentos">
+        <item>Venta Libre</item>
+        <item> Receta </item>
+    </string-array>
+    <string name="title_activity_editar_eliminar_medicamento">EditarEliminarMedicamento</string>
+    <!-- Strings used for fragments for navigation -->
+
+</resources>

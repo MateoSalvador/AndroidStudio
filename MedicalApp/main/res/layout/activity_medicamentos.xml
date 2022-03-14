@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtCostoUnitario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicamentosActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="360dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#4EAFFD"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:srcCompat="@drawable/curita" />
+
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:foregroundTint="#FFFFFF"
+                android:text="@string/titulo"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/txtRegistroMedicamentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="REGISTRO DE MEDICAMENTOS"
+            android:textAlignment="center"
+            android:textColor="@color/Azul_Base"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="302dp"
+        android:layout_height="364dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/Azul_Base"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/txtNombreMedicamento"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:editable="true"
+            android:gravity="center"
+            android:hint="INGRESE EL NOMBRE DEL MEDICAMENTO"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:translationY="10dp" />
+
+        <Spinner
+            android:id="@+id/spnTipo"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:entries="@array/Tipos_Medicamentos"
+            android:gravity="center"
+            android:hint="INGRESE EL TIPO"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:translationY="20dp"
+            android:visibility="visible"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/txtCosto"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="INGRESE EL COSTO UNITARIO"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:translationY="30dp" />
+
+        <EditText
+            android:id="@+id/txtPvp"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="INGRESE EL PVP"
+            android:minHeight="48dp"
+            android:numeric="decimal"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:translationY="40dp" />
+
+        <EditText
+            android:id="@+id/txtFechaVencimiento"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="INGRESE SU FECHA DE VENCIMINIENTO"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:translationY="50dp" />
+
+        <EditText
+            android:id="@+id/txtProveedor"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="INGRESE EL PROVEEDOR"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:translationY="60dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="97dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRegresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/Azul_Base"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                app:icon="@android:drawable/ic_menu_revert"
+                app:iconGravity="textEnd"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btnGuardarMedicamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/Azul_Base"
+                android:textColor="@color/white"
+                app:icon="@android:drawable/ic_menu_send"
+                app:iconGravity="textEnd"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtautores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Nombres"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

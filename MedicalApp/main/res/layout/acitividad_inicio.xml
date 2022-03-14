@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcitividadInicio">
+
+    <TextView
+        android:id="@+id/lblInicio"
+        android:layout_width="380dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:shadowColor="#3F51B5"
+        android:text="MEDICAL APP"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imgInicio"
+        android:layout_width="103dp"
+        android:layout_height="231dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblInicio"
+        app:srcCompat="@drawable/curita" />
+
+    <Button
+        android:id="@+id/btnEmpleado"
+        android:layout_width="285dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="63dp"
+        android:text="SOY EMPLEADO"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgInicio" />
+
+    <Button
+        android:id="@+id/btnCliente"
+        android:layout_width="285dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="63dp"
+        android:text="SOY CLIENTE"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmpleado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

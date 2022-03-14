@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActividadRegistrarEmpleado">
+
+    <TextView
+        android:id="@+id/lblRegistroEmpleado"
+        android:layout_width="352dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:text="REGISTRO EMPLEADO"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/lblUsuarioEmpleadoRegistro"
+        android:layout_width="76dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Usuario"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRegistroEmpleado" />
+
+    <EditText
+        android:id="@+id/txtRegistrarUsuarioEmpleado"
+        android:layout_width="304dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:hint="Registre Su Usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblUsuarioEmpleadoRegistro" />
+
+    <TextView
+        android:id="@+id/lblRegistrarContraseñaEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Contraseña"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegistrarUsuarioEmpleado" />
+
+    <EditText
+        android:id="@+id/txtRegistrarContraseñaEmpleado"
+        android:layout_width="293dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="************"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRegistrarContraseñaEmpleado" />
+
+    <TextView
+        android:id="@+id/lblConfirmarContraseñaEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Confirmar Contraseña"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegistrarContraseñaEmpleado" />
+
+    <EditText
+        android:id="@+id/txtConfirmarContraseñaEmpleado"
+        android:layout_width="298dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="*************"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblConfirmarContraseñaEmpleado" />
+
+    <TextView
+        android:id="@+id/lblCodigoEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Código de Activación"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfirmarContraseñaEmpleado" />
+
+    <EditText
+        android:id="@+id/txtCodigoActivacion"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="Ingrese el Código de Activación"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCodigoEmpleado" />
+
+    <Button
+        android:id="@+id/btnGuardarRegistroEmpleado"
+        android:layout_width="159dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="150dp"
+        android:text="Registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigoActivacion" />
+
+    <Button
+        android:id="@+id/btnCancelarRegistroEmpleado"
+        android:layout_width="137dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="150dp"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardarRegistroEmpleado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

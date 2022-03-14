@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActividadLoggingEmpleado">
+
+    <TextView
+        android:id="@+id/textViewTítulo"
+        android:layout_width="352dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="30dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#FFFFFF"
+        android:text="MEDICAL APP"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imgLoginCliente"
+        android:layout_width="161dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTítulo"
+        app:srcCompat="@drawable/botiquin" />
+
+    <TextView
+        android:id="@+id/textviewUsuario"
+        android:layout_width="124dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Usuario"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLoginCliente" />
+
+    <EditText
+        android:id="@+id/txtUserEmpleado"
+        android:layout_width="306dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:hint="Ingrese su Usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewUsuario" />
+
+    <TextView
+        android:id="@+id/textviewContraseñaEmpleado"
+        android:layout_width="126dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Contraseña"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserEmpleado" />
+
+    <EditText
+        android:id="@+id/txtPasswordEmpleado"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Ingrese su Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewContraseñaEmpleado" />
+
+    <Button
+        android:id="@+id/btnIngresarEmpleado"
+        android:layout_width="219dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:text="Ingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordEmpleado" />
+
+    <Button
+        android:id="@+id/btnRegistrarEmpleado"
+        android:layout_width="219dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:background="#00FFFFFF"
+        android:text="REGISTRARSE"
+        android:textColor="#000F96"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresarEmpleado" />
+
+    <Button
+        android:id="@+id/btnRegresarInicio"
+        android:layout_width="90dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:textAlignment="center"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:iconGravity="textTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarEmpleado"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
